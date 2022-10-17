@@ -1,4 +1,5 @@
 import { fileURLToPath } from 'url'
+import { resolve } from 'path'
 import type { ConfigEnv } from 'vite'
 import { defineConfig, loadEnv } from 'vite'
 import vue from '@vitejs/plugin-vue'
@@ -7,12 +8,16 @@ import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
 import Unocss from 'unocss/vite'
+const packageDir = fileURLToPath(new URL('../packages', import.meta.url))
 
 export default ({ mode }: ConfigEnv) => {
   const env = loadEnv(mode, process.cwd())
   return defineConfig({
     resolve: {
       alias: {
+        '@yanyu-fe/pro-table': resolve(packageDir, 'table/src'),
+        '@yanyu-fe/pro-field': resolve(packageDir, 'field/src'),
+        '@yanyu-fe/pro-form': resolve(packageDir, 'form/src'),
         '~@': fileURLToPath(new URL('src', import.meta.url)),
         '~': fileURLToPath(new URL('src', import.meta.url)),
         'vue-i18n': `vue-i18n/dist/${mode === 'development' ? 'vue-i18n.esm-browser.js' : 'vue-i18n.esm-browser.prod.js'}`,

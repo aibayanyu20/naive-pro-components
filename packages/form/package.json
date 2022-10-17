@@ -8,5 +8,13 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "naive-ui": "^2.33.3",
+    "vue": "^3.2.40"
+  },
+  "peerDependencies": {
+    "naive-ui": "^2.33.3",
+    "vue": "^3.2.40"
+  }
 }

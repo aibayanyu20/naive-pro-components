@@ -1,5 +1,5 @@
 {
-  "extends": "@mistjs/tsconfig-vue",
+  "extends": "../tsconfig.json",
   "compilerOptions": {
     "baseUrl": ".",
     "types": [
@@ -8,6 +8,9 @@
     "paths": {
       "~@/*": ["src/*"],
       "~/*": ["src/*"],
+      "@yanyu-fe/pro-table":["../packages/table/src"],
+      "@yanyu-fe/pro-field":["../packages/field/src"],
+      "@yanyu-fe/pro-form":["../packages/form/src"]
     }
   },
   "vueCompilerOptions":{

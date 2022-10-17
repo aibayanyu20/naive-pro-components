@@ -19,13 +19,28 @@ importers:
       vite: 3.1.8
 
   packages/field:
-    specifiers: {}
+    specifiers:
+      naive-ui: ^2.33.3
+      vue: ^3.2.40
+    devDependencies:
+      naive-ui: 2.33.5_vue@3.2.41
+      vue: 3.2.41
 
   packages/form:
-    specifiers: {}
+    specifiers:
+      naive-ui: ^2.33.3
+      vue: ^3.2.40
+    devDependencies:
+      naive-ui: 2.33.5_vue@3.2.41
+      vue: 3.2.41
 
   packages/table:
-    specifiers: {}
+    specifiers:
+      naive-ui: ^2.33.3
+      vue: ^3.2.40
+    devDependencies:
+      naive-ui: 2.33.5_vue@3.2.41
+      vue: 3.2.41
 
   playground:
     specifiers:
