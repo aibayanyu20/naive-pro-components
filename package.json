@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "naive pro components",
   "scripts": {
-    "docs:dev": ""
+    "play": "pnpm -F playground dev"
   },
   "keywords": [],
   "author": "aibayanyu",

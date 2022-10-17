@@ -1,0 +1,16 @@
+{
+  "extends": "@mistjs/tsconfig-vue",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "types": [
+      "vite/client"
+    ],
+    "paths": {
+      "~@/*": ["src/*"],
+      "~/*": ["src/*"],
+    }
+  },
+  "vueCompilerOptions":{
+    "experimentalDisableTemplateSupport":true,
+  }
+}
