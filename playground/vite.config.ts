@@ -15,9 +15,9 @@ export default ({ mode }: ConfigEnv) => {
   return defineConfig({
     resolve: {
       alias: {
-        '@yanyu-fe/pro-table': resolve(packageDir, 'table/src'),
-        '@yanyu-fe/pro-field': resolve(packageDir, 'field/src'),
-        '@yanyu-fe/pro-form': resolve(packageDir, 'form/src'),
+        '@naive-vue/pro-table': resolve(packageDir, 'table/src'),
+        '@naive-vue/pro-field': resolve(packageDir, 'field/src'),
+        '@naive-vue/pro-form': resolve(packageDir, 'form/src'),
         '~@': fileURLToPath(new URL('src', import.meta.url)),
         '~': fileURLToPath(new URL('src', import.meta.url)),
         'vue-i18n': `vue-i18n/dist/${mode === 'development' ? 'vue-i18n.esm-browser.js' : 'vue-i18n.esm-browser.prod.js'}`,

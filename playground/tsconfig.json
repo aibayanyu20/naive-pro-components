@@ -8,9 +8,9 @@
     "paths": {
       "~@/*": ["src/*"],
       "~/*": ["src/*"],
-      "@yanyu-fe/pro-table":["../packages/table/src"],
-      "@yanyu-fe/pro-field":["../packages/field/src"],
-      "@yanyu-fe/pro-form":["../packages/form/src"]
+      "@naive-vue/pro-table":["../packages/table/src"],
+      "@naive-vue/pro-field":["../packages/field/src"],
+      "@naive-vue/pro-form":["../packages/form/src"]
     }
   },
   "vueCompilerOptions":{
